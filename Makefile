@@ -1,11 +1,5 @@
 # Mage Makefile for building and pushing a containerized application to Amazon ECR
 # By Anderson Brandao (andersonbn.itpro@gmail.com)
-
-REGISTRY = 452158872079.dkr.ecr.us-east-1.amazonaws.com
-IMAGE =  mage
-BUILD_NUMBER?=0.1.87
-MVN_VERSION = 3.3.3-jdk-8
-
 .PHONY: all build release
 
 all: build build_docker
